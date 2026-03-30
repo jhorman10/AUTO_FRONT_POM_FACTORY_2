@@ -7,7 +7,7 @@ This file defines general guidance for all AI agents working in this repository,
 ## Project Summary
 
 > Ver `README.md` en la raíz del proyecto para stack, arquitectura y estructura de carpetas del proyecto actual.
-> Ver `.github/README.md` para la estructura completa del framework ASDD.
+> Ver `.github/ASDD_README.md` para la estructura completa del framework ASDD.
 
 ## ASDD Workflow
 
