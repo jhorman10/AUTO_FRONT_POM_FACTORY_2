@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Formulario de Contacto" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-30T03:15:15" hostname="psofka0672.sofka.local" time="10.126">
+  <properties/>
+  <testcase name="Enviar formulario de contacto exitosamente con dataset reutilizable" classname="Formulario de Contacto" time="10.126"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[mar 29, 2026 10:15:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 146
+mar 29, 2026 10:15:17 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 146.0.7680.164. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
