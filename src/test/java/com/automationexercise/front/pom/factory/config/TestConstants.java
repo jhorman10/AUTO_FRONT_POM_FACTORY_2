@@ -56,4 +56,40 @@ public final class TestConstants {
         private Steps() {
         }
     }
+
+    public static final class Selectors {
+
+        public static final class ContactUs {
+            public static final String GET_IN_TOUCH_TITLE_XPATH = "//h2[contains(@class,'title') and contains(translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'GET IN TOUCH')]";
+            public static final String NAME_INPUT_CSS = "input[data-qa='name']";
+            public static final String EMAIL_INPUT_CSS = "input[data-qa='email']";
+            public static final String SUBJECT_INPUT_CSS = "input[data-qa='subject']";
+            public static final String MESSAGE_INPUT_CSS = "textarea[data-qa='message']";
+            public static final String UPLOAD_INPUT_CSS = "input[name='upload_file']";
+            public static final String SUBMIT_BUTTON_CSS = "input[data-qa='submit-button']";
+
+            private ContactUs() {
+            }
+        }
+
+        public static final class Landing {
+            public static final String CONTACT_US_BUTTON_CSS = "a[href='/contact_us']";
+            public static final String LOGO_IMAGE_CSS = "div.logo a[href='/'] img";
+
+            private Landing() {
+            }
+        }
+
+        public static final class ContactConfirmation {
+            public static final String SUCCESS_ALERT_CSS = "div.status.alert.alert-success";
+            public static final String HOME_BUTTON_CSS = "#form-section a[href='/']";
+            public static final String LOGO_IMAGE_CSS = "div.logo a[href='/'] img";
+
+            private ContactConfirmation() {
+            }
+        }
+
+        private Selectors() {
+        }
+    }
 }

@@ -11,13 +11,10 @@ import net.serenitybdd.core.pages.WebElementFacade;
 @DefaultUrl(TestConstants.Url.BASE_URL)
 public class LandingPage extends PageObject {
 
-    private static final String CONTACT_US_BUTTON_CSS = "a[href='/contact_us']";
-    private static final String LOGO_IMAGE_CSS = "div.logo a[href='/'] img";
-
-    @FindBy(css = CONTACT_US_BUTTON_CSS)
+    @FindBy(css = TestConstants.Selectors.Landing.CONTACT_US_BUTTON_CSS)
     private WebElementFacade contactUsButton;
-
-    @FindBy(css = LOGO_IMAGE_CSS)
+    
+    @FindBy(css = TestConstants.Selectors.Landing.LOGO_IMAGE_CSS)
     private WebElementFacade logoImage;
 
     public void openHomePage() {
