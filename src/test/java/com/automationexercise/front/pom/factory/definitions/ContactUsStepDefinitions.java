@@ -25,7 +25,7 @@ public class ContactUsStepDefinitions {
         contactUsFlowSteps.openHome();
     }
 
-    @When(WHEN_OPEN_CONTACT)
+    @Given(WHEN_OPEN_CONTACT)
     public void theUserOpensContactUsForm() {
         contactUsFlowSteps.openContactForm();
     }
@@ -40,7 +40,7 @@ public class ContactUsStepDefinitions {
         contactUsFlowSteps.uploadAttachment(datasetKey);
     }
 
-    @And(AND_SUBMIT_ACCEPT)
+    @When(AND_SUBMIT_ACCEPT)
     public void theUserSubmitsTheContactFormAndAcceptsTheConfirmationAlert() {
         contactUsFlowSteps.submitAndAcceptAlert();
     }
