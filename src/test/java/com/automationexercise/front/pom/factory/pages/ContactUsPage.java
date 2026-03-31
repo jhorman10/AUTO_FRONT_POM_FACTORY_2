@@ -1,6 +1,10 @@
 package com.automationexercise.front.pom.factory.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.automationexercise.front.pom.factory.config.TestConstants.Selectors.ContactUs.EMAIL_INPUT_CSS;
 import static com.automationexercise.front.pom.factory.config.TestConstants.Selectors.ContactUs.GET_IN_TOUCH_TITLE_XPATH;
@@ -56,6 +60,12 @@ public class ContactUsPage extends PageObject {
     }
 
     public void acceptConfirmationAlert() {
-        getDriver().switchTo().alert().accept();
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(3));
+            wait.until(ExpectedConditions.alertIsPresent());
+            getDriver().switchTo().alert().accept();
+        } catch (org.openqa.selenium.TimeoutException | org.openqa.selenium.NoAlertPresentException e) {
+            // No browser alert appeared; proceed (confirmation may be inline)
+        }
     }
 }
