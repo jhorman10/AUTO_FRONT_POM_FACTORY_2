@@ -80,11 +80,6 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # ===========================
-# Documentación local (no incluir en repo)
-# ===========================
-GUIA_FUNCIONAMIENTO_PROYECTO.md
-
-# ===========================
 # Logs
 # ===========================
 *.log
